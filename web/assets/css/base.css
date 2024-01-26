@@ -1,0 +1,239 @@
+:root{
+    --white-color:#fff;
+    --black-color:#000;
+    --text-color:rgb(253, 216, 216);
+    --main-color:#f8b600;
+}
+*{
+    box-sizing:inherit;
+}
+html{
+    font-size: 62.5%;
+    /* 1rem =10px */
+    font-family:'roboto',sans-serif;
+    box-sizing:border-box;
+}
+
+.grid{
+  width: 1200px;
+  max-width:100%;
+  margin:0 auto;
+}
+.grid-row{
+    display:flex;
+    flex-wrap:wrap;
+    margin-left:-5px ;
+    margin-right:-5px ;
+}
+.grid-column-2{
+    padding-left: 5px;
+    padding-right: 5px;
+    width:16.6667%;
+}
+.grid-column-2-4{
+
+    padding-left: 5px;
+    padding-right: 5px;
+    width:20%;
+}
+.grid-column-10{
+    padding-left: 5px;
+    padding-right: 5px;
+    width:83.3334%;
+}
+.grid__full-width{
+    width:100%;
+    
+}
+@keyframes headerNotifyUp{
+    from{
+        transform:scale(0);
+    }
+    to{
+        transform:scale(1);
+    }
+}
+@keyframes growth{
+    from{
+        transform:scale(--growth-from);
+    }
+    to{
+        transform:scale(--growth-to);
+    }
+}
+
+.model{
+    position: fixed;
+    top:0;
+    right:0;
+    left:0;
+    bottom: 0;
+    display:none;
+}
+.model__js-SignIn{
+    --growth-from:0.7;
+    --growth-to:1;
+    display: none;
+    animation: growth linear 0.2s;
+}
+.model__js-LogIn{
+    --growth-from:0.8;
+    --growth-to:1;
+    display:none;
+    animation: growth linear 0.2s;
+}
+
+.model__overlay{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+}
+.model__body{
+    width:500px;
+    min-height:500px;
+    margin:auto;
+    z-index: 1;
+    position: relative;
+    background-color:var(--white-color);
+    border-radius: 2px;
+}
+.model__inner{
+    padding:32px 32px;
+}
+.form__signin--header{
+    display:flex;
+    font-size:2rem;
+    justify-content: space-between;
+    padding-bottom: 44px;
+}
+.login--switch{
+    text-decoration: none;
+    color:var(--main-color);
+}
+.signin--switch,
+.signin--heading{
+    text-decoration: none;
+    color:var(--main-color);
+}
+.form__input{
+    padding:8px 0;
+    
+}
+.form__input--input{
+    width:100%;
+    padding:8px;
+    font-size:1.6rem;
+}
+.form__aside{
+    font-size: 1.4rem;
+    padding:0 4px;
+    line-height: 1.4;
+    text-align:center;
+}
+.form--policy--child{
+    text-decoration: none;
+    font-weight:500;
+    color:var(--main-color);
+    
+}
+.form__control{
+    margin-top:96px;
+    display:flex;
+    flex-direction: row-reverse;
+}
+.form__controls-login{
+    margin-top: 30px;
+}
+.btn-primary{
+    background:var(--main-color);
+    color:var(--white-color);
+}
+.btn-primary-login{
+    width:100%;
+    height: 46px;
+    background: var(--main-color);;
+    color:#000;
+}
+.form__If{
+    margin-top:20px;
+    display:flex;
+}
+.form__If-header{
+    width:100%;
+    margin:auto;
+    height: 1px;
+    border: 1px solid #ccc;
+}
+.form__If-body p{
+    padding:0 16px;
+    font-size:1.5rem;
+    color:#ccc;
+    text-transform: uppercase;
+    margin:0;
+}
+.form__end{
+    margin-top:20px;
+    display: flex;
+    justify-content: space-between;
+}
+.form__end-link{
+    text-decoration: none;
+    font-size:1.8rem;
+    min-width:100px;
+    height: 36px;
+    color:var(--white-color)
+}
+.form__end-twi,
+.form__end-fb{
+    background-color:#1877f2;
+    text-align:center;
+    padding:8px 4px;
+}
+.form-icon{
+    font-size:20px;
+    padding-right:4px;
+}
+.form__end-apple{
+    background-color:var(--black-color);
+    text-align:center;
+    padding:8px 4px;
+}
+.form-icon-google{
+    width:40px;
+    padding:2px;
+}
+.form__end-google{
+    background-color:var(--black-color);  
+    display:flex;
+}
+.form__end-google span{
+  padding:8px 8px;
+}
+.form__help_login{
+    font-size:1.2rem;
+    margin:8px 0;
+    display:flex;
+    flex-direction: row-reverse;
+}
+.form__help-lone{
+    text-decoration: none;
+}
+.form__footer__login{
+    font-size:1.4rem;
+    display:flex;
+    justify-content:center;
+    padding-top:30px;
+}
+.form__footer-header{
+    color:#ccc;
+}
+.form__footer-end{
+    text-decoration: none;
+    font-weight:500;
+    color:var(--main-color);
+}
+.border-color{
+    border-top:1px solid #e8e8e8;
+    padding-bottom:52px;
+}
